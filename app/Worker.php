@@ -1,11 +1,11 @@
 <?php
 namespace App;
-abstract class Worker
+abstract class Worker implements WorkerInterface
 {
     private string $name;
     private int $age;
     private array $hours;
-    private int $experience;
+
 
     /**
      * @param string $name
@@ -13,12 +13,11 @@ abstract class Worker
      * @param array $hours
      * @param int $experience
      */
-    public function __construct(string $name, int $age, array $hours, int $experience)
+    public function __construct(string $name, int $age, array $hours)
     {
         $this->name = $name;
         $this->age = $age;
         $this->hours = $hours;
-        $this->experience = $experience;
     }
 
 
@@ -75,20 +74,4 @@ abstract class Worker
     /**
      * @return int
      */
-    public function getExperience(): int
-    {
-        return $this->experience;
-    }
-
-    /**
-     * @param int $experience
-     */
-    public function setExperience(int $experience): void
-    {
-        $this->experience = $experience;
-    }
-
-
-
-
 }

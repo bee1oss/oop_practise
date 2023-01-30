@@ -3,8 +3,8 @@ require_once "../vendor/autoload.php";
 
 $name = "Bega";
 $age = 22;
-$experience = 2;
 $hours = [6,12,12,8];
 
-$developer = new \App\Developer($name,$age,$hours,$experience);
-var_dump($developer);
+$developer = new \App\Developer("Bega",22,[6,12,12,8]);
+$salary = new \app\Salary::count($developer->getHours());
+var_dump($salary);
