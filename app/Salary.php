@@ -4,8 +4,10 @@ namespace App;
 
 class Salary
 {
+    static public int $totalHours;
     static public function count(array $hours) : int
     {
-        return array_sum($hours) * 200;
+        self::$totalHours = array_sum($hours);
+        return self::$totalHours * 200;
     }
 }
