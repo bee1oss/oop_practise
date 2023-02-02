@@ -16,3 +16,12 @@ $workers = [$designer,$developer];
 //$developer = null;
 //$developer->asdhasd();
 //\App\Developer::asdasdasd();
+//$developer->asdadasd;
+//$developer->asdasd = 'qwdsada';
+
+//var_dump(isset($developer->aksldjlajsd));
+//unset($developer->aksldjlajsd);
+/*$str = serialize($developer);
+var_dump($str);*/
+
+
